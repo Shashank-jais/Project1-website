@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <script>
+
+        // Get the navigation bar element
+        const navbar = document.getElementById('navbar');
+
+        // Add a scroll event listener to detect when to change the background color
+        window.addEventListener('scroll', () => {
+            // Add or remove the class based on the scroll position
+            if (window.scrollY > 50) {
+                navbar.classList.add('white-bg');
+            } else {
+                navbar.classList.remove('white-bg');
+            }
+        });
+
+
+    </script>
+    <title>Template</title>
+</head>
+
+<body>
+    <section id="home">
+        <nav id="navbar" class="fixed-navbar white-bg transparent-bg">
+            <div id="logo">
+                <!-- <img src="logo2.jpg" alt=""> -->
+                <h1 class="hm"><a href="index.html">Append</a></h1>
+            </div>
+            <ul>
+                <li class="item"><a href="#">Home</a></li>
+                <li class="item"><a href="#aboutus">About us</a></li>
+                <li class="item"><a href="#serv">Sevices</a></li>
+                <li class="item"><a href="#">Portfolio</a></li>
+                <li class="item"><a href="#teams">Team</a></li>
+                <li class="item"><a href="#">Contact</a></li>
+            </ul>
+            <div><button class="btn"><a href="index.html"></a>Get Started</button></div>
+
+        </nav>
+        <div class="main main-animation">
+            <h1>Welcome to Our Website</h1>
+            <h2>We are team of talented designers making websites with Bootstrap</h2>
+            <form action="submit_form.php" method="post"> <!-- You need to specify the actual action and method -->
+                <div class="input-container">
+                    <input type="email" id="email" name="email" placeholder="     Enter your email address" required>
+                    <button class="signup-button" type="submit">Sign Up</button>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="middle">
+        <div class="client">
+            <img src="client-1.png" alt="" srcset="">
+            <img src="client-2.png" alt="" srcset="">
+            <img src="client-3.png" alt="" srcset="">
+            <img src="client-4.png" alt="" srcset="">
+            <img src="client-5.png" alt="" srcset="">
+            <img src="client-6.png" alt="" srcset="">
+        </div>
+    </section>
+    <section class="Aboutus  Aboutus-animation" id="aboutus">
+        <div class="aboutus1">
+            <h3 class="About">About us</h3>
+            <H1><br>Ducimus rerum libero reprehenderit cumque </H1>
+            <p> <br>Ipsa sint sit. Quis ducimus tempore dolores impedit et dolor cumque alias maxime. Enim
+                reiciendis
+                minus
+                et rerum hic non. Dicta quas cum quia maiores iure. Quidem nulla qui assumenda incidunt voluptatem
+                tempora deleniti soluta.</p>
+            <button class="ReadMore" type="submit">Read More </button>
+        </div>
+
+        <div class="aboutus2">
+            <img src="img1.png" alt="">
+            <h1>Eius provident</h1>
+            <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+        </div>
+        <div class="aboutus3">
+            <img src="img2.png" alt="">
+            <h1>Eius provident</h1>
+            <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+        </div>
+        <div class="aboutus4">
+            <img src="img3.png" alt="">
+            <h1>Eius provident</h1>
+            <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+        </div>
+        <div class="aboutus5">
+            <img src="img4.png" alt="">
+            <h1>Eius provident</h1>
+            <p>Magni repellendus vel ullam hic officia accusantium ipsa dolor omnis dolor voluptatem</p>
+        </div>
+
+    </section>
+    <section id="Number" class="Numbers num-animation">
+        <div class="number-content1 ">
+            <h2>Clients</h2>
+        </div>
+        <div class="number-content2 ">
+            <h2>Projects</h2>
+        </div>
+        <div class="number-content3">
+            <h2>Hours Of Support</h2>
+        </div>
+        <div class="number-content4">
+            <h2>Workers</h2>
+        </div>
+
+        <img class="count" src="count.jpg" alt="">
+
+    </section>
+    <section class="service ser-animation " id="serv">
+        <h1 class="head">
+            <hr>Services
+            <hr>
+        </h1>
+        <div class="s">
+            <div class="s1">
+                <h3><a href="#">Lorem, ipsum dolor.</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit!</p>
+            </div>
+            <div class="s2">
+                <h3><a href="#">Lorem, ipsum dolor.</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit!</p>
+            </div>
+            <div class="s3">
+                <h3><a href="#">Lorem, ipsum dolor.</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit!</p>
+            </div>
+            <div class="s4">
+                <h3><a href="#">Lorem, ipsum dolor.</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit!</p>
+            </div>
+            <div class="s5">
+                <h3><a href="#">Lorem, ipsum dolor.</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit!</p>
+            </div>
+            <div class="s6">
+                <h3><a href="#">Lorem, ipsum dolor.</a>
+                </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit!</p>
+            </div>
+        </div>
+
+    </section>
+    <section class="features fea-animation">
+        <div class="heading">
+            <h1 class="head">
+                Features
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="f">
+            <div class="f1">
+                <h1>Corporis temporibus maiores provident</h1>
+                <p>Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit
+                    in
+                    voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat
+                    non
+                    proident.</p>
+                <div><button class="btn"><a href="index.html"></a>Get Started</button></div>
+            </div>
+            <div class="f2">
+                <img src="features-light-1.jpg" alt="">
+                <img src="features-light-2.jpg" alt="">
+            </div>
+        </div>
+
+    </section>
+    <section class="team team-animation" id="teams">
+        <div class="headingt">
+            <h1 class="head">
+                Team
+            </h1>
+            <p>Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit. Lorem ipsum dolor sit.</p>
+        </div>
+        <div class="t">
+            <div class="t1">
+                <img src="team1.jpg" alt="Team Member" class="team-member-image">
+                <h3>Shri Bala ji</h3>
+
+            </div>
+            <div class="t1">
+                <img src="team1.jpg" alt="Team Member" class="team-member-image">
+                <h3>Shri Bala ji</h3>
+
+            </div>
+        </div>
+    </section>
+    <section class="footer footer-animation">
+        <div class="foot">
+            <div class="foot1">
+                <h1>Append</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi hic perspiciatis pariatur doloremque
+                    aspernatur porro repudiandae tenetur nam accusamus animi.</p>
+
+                    <div id="logo">
+                        <span class="copyright">&copy;</span>
+                    </div>
+            </div>
+            <div class="foot1 links">
+                <h1>Useful links</h1>
+                <ul>
+                    <li class="item"><a href="#">Home</a></li>
+                    <li class="item"><a href="#aboutus">About us</a></li>
+                    <li class="item"><a href="#serv">Sevices</a></li>
+                    <li class="item"><a href="#">Portfolio</a></li>
+                    <li class="item"><a href="#teams">Team</a></li>
+                    <li class="item"><a href="#">Contact</a></li>
+                </ul>
+            </div>
+            
+
+        </div>
+
+    </section>
+
+
+</body>
+
+</html>

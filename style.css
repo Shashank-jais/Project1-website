@@ -1,0 +1,833 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family:"Sofia", sans-serif ;
+
+}
+
+
+
+
+.hm a {
+    text-decoration: none;
+    color: black;
+    font-size: large;
+}
+
+.Append {
+    margin-right: 2px;
+}
+
+#logo {
+    margin: 10px 34px;
+
+}
+
+#logo img {
+    margin: 3px 5px;
+    height: 60px;
+
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    margin: 0px 0px;
+    height: 59px;
+    position: fixed;
+    width: 100%;
+
+
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+    /* Add this line to horizontally center the list items */
+    width: 100%;
+    /* Adjust the width to ensure proper centering */
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    /* Add some margin to separate the items */
+}
+
+
+#navbar ul {
+    display: flex;
+}
+
+#navbar::before {
+    content: "";
+    /* background-color: black; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.2rem;
+
+}
+
+#navbar ul li a {
+    color: #000000;
+    padding: 3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+
+.btn {
+    padding: 6px 20px;
+    /* border: 2px solid white; */
+    background-color: rgb(239, 62, 62);
+    color: white;
+    margin: 17px;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 126px;
+
+}
+
+#home::before {
+    content: "";
+    background: url('Background.webp') no-repeat center center/cover;
+    /* background-color: black; */
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+.main {
+    position: absolute;
+    align-items: center;
+    color: rgb(0, 0, 0);
+    margin: 310px 10px 10px 99px;
+    /* border: 2px solid black; */
+    font-size: 23px;
+    /* transition: ; */
+}
+
+.main-animation {
+    opacity: 0;
+    transform: translateY(1000px);
+    /* Initial position below the viewport */
+    animation: fadeInUp 2s forwards;
+    /* Apply the animation */
+}
+
+.white-bg {
+    background-color: white !important;
+    /* box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); */
+}
+
+
+.transparent-bg {
+    background-color: transparent !important;
+}
+
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.input-container {
+    position: relative;
+    display: inline-block;
+}
+
+input#email {
+    width: 463px;
+    height: 43px;
+    border-radius: 8px;
+    border: none;
+
+}
+
+.signup-button {
+    position: absolute;
+    right: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgb(239, 62, 62);
+    border-radius: 24px;
+    padding: 7px 13px 8px 10px
+}
+
+section.middle {
+    position: absolute;
+    top: 794px;
+    width: 99.8%;
+    /* border: 2px solid black; */
+    background-color: rgb(226, 226, 226);
+}
+
+.client {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+    /* Allow images to wrap to the next line if needed */
+}
+
+.client img {
+    display: block;
+    padding: 48px;
+    max-width: 100%;
+    max-height: 49px;
+    width: auto;
+    height: auto;
+    margin: 5px;
+    /* Adjust spacing between images */
+    transition: filter 0.3s ease-in-out;
+    filter: opacity(0.4);
+}
+
+.client img:hover {
+    filter: brightness(1.2);
+}
+
+section.Aboutus {
+    position: absolute;
+    top: 969px;
+    width: 98%;
+    /* border: 2px solid black; */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+.Aboutus-animation {
+    opacity: 0;
+    transform: translateY(1000px);
+    /* Initial position below the viewport */
+    animation: fadeInUp 3s forwards;
+    /* Apply the animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(200px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.About {
+    background-color: rgb(247, 201, 201);
+    display: inline;
+    padding: 4px;
+    color: red;
+}
+
+.aboutus1,
+.aboutus2,
+.aboutus3,
+.aboutus4,
+.aboutus5 {
+    /* border: 2px solid black; */
+    padding: 20px;
+    margin: 9px;
+
+}
+
+.aboutus2,
+.aboutus3,
+.aboutus4,
+.aboutus5 {
+
+    background-color: rgba(247, 201, 201, 0.245);
+}
+
+.aboutus2 img,
+.aboutus3 img,
+.aboutus4 img,
+.aboutus5 img {
+    transition: filter 0.3s ease-in-out;
+    filter: opacity(0.4);
+    margin: 7px 14px;
+}
+
+.aboutus2 img:hover,
+.aboutus3 img:hover,
+.aboutus4 img:hover,
+.aboutus5 img:hover {
+    filter: brightness(1.2);
+
+}
+
+/* .aboutus2:hover ,
+.aboutus3:hover ,
+.aboutus4:hover ,
+.aboutus5:hover {
+    background-color: red; */
+
+
+.aboutus1 {
+    margin: 6px 112px 59px 16px;
+    text-align: justify;
+
+    padding: 34px 28px 31px 19px;
+}
+
+button.ReadMore {
+    font-size: 18px;
+    color: white;
+    margin: 11px;
+    background-color: rgb(239, 62, 62);
+    border-radius: 24px;
+    padding: 7px 17px 9px 18px;
+    position: relative;
+    overflow: hidden;
+    transition: padding 0.3s, transform 0.3s, background-color 0.3s;
+}
+
+button.ReadMore::after {
+    content: '\2192';
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+
+button.ReadMore:hover {
+    padding: 9px 18px 11px 19px;
+    transform: scale(1.1);
+    background-color: rgb(255, 72, 72);
+}
+
+/* section.Numbers{
+    position: absolute;
+    top: 1890px;
+    width: 72%;
+    /* border: 2px solid black; *
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+section.Numbers {
+    position: absolute;
+    top: 1890px;
+    width: 72%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    padding: 10px;
+    flex-wrap: wrap;
+    background-color: white;
+}
+
+
+
+
+.number-content1,
+.number-content2 {
+    position: relative;
+    z-index: 2;
+    color: aliceblue;
+    animation: counter 3s ease-in-out forwards;
+    counter-reset: num var(--num);
+    font: 794 32px system-ui;
+    padding: 1rem;
+}
+
+.number-content1::before,
+.number-content2::before {
+    content: counter(num);
+} */
+.num-animation {
+    opacity: 0;
+    transform: translateY(1000px);
+    /* Initial position below the viewport */
+    animation: fadeInUp 5s forwards;
+    /* Apply the animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(2000px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section.Numbers {
+    position: relative;
+    /* Change to relative positioning */
+    top: 2000px;
+
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: white;
+    margin: 0px 0px;
+}
+
+.service h1.head {
+    background-color: rgb(247, 201, 201);
+}
+
+.number-content1,
+.number-content2,
+.number-content3,
+.number-content4 {
+    position: absolute;
+    z-index: 2;
+    color: aliceblue;
+    animation: counter 3s ease-in-out forwards;
+    animation-delay: 5.1s;
+    counter-reset: num var(--num);
+    font: 23px system-ui;
+    padding: 1rem;
+}
+
+.number-content1::before,
+.number-content2::before,
+.number-content3::before,
+.number-content4::before {
+    content: counter(num);
+    font-weight: 1000;
+    font-size: 23px;
+
+}
+
+/* Adjust the positioning and sizing based on your design */
+.number-content1 {
+    top: 50%;
+    left: 10%;
+    transform: translate(-10%, -50%);
+}
+
+.number-content2 {
+    top: 50%;
+    left: 30%;
+    transform: translate(-30%, -50%);
+}
+
+.number-content3 {
+    top: 50%;
+    left: 65%;
+    transform: translate(-65%, -50%);
+}
+
+.number-content4 {
+    top: 50%;
+    left: 90%;
+    transform: translate(-90%, -50%);
+}
+
+.count {
+    max-width: 98%;
+    filter: brightness(48%);
+    opacity: 6;
+}
+
+
+
+@property --num {
+    syntax: "<integer>";
+    initial-value: 0;
+    inherits: false;
+}
+
+
+@keyframes counter {
+    from {
+        --num: 0;
+    }
+
+    to {
+        --num: 100;
+    }
+}
+
+section.service {
+    position: absolute;
+    top: 2247px;
+    width: 99%;
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 37px 5px;
+}
+
+.s {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    /* margin: 0px 0px; */
+
+
+}
+
+.s1,
+.s2,
+.s3,
+.s4,
+.s5,
+.s6 {
+    border: 2px solid black;
+    margin: 11px 46px;
+    padding: 28px 50px;
+    font-size: 19px;
+    box-shadow: 10px 10px 9px;
+
+
+}
+
+.service h1 {
+    text-align: center;
+    margin: 22px 0px;
+    font-size: 60px;
+    /* color: red; */
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.s1 h3 a,
+.s2 h3 a,
+.s3 h3 a,
+.s4 h3 a,
+.s5 h3 a,
+.s6 h3 a {
+    text-decoration: none;
+}
+
+.s1 h3 a:hover,
+.s2 h3 a:hover,
+.s3 h3 a:hover,
+.s4 h3 a:hover,
+.s5 h3 a:hover,
+.s6 h3 a:hover {
+    color: red;
+
+}
+
+.ser-animation {
+    opacity: 0;
+    transform: translateY(1000px);
+    /* Initial position below the viewport */
+    animation: fadeInUp 8s forwards;
+    /* Apply the animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(2500px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section.features {
+    position: absolute;
+    top: 2871px;
+    width: 99%;
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 37px 5px;
+    overflow-x: hidden;
+}
+
+.heading h1 {
+    text-align: center;
+    margin: 22px 0px;
+    font-size: 60px;
+
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.heading p {
+    text-align: center;
+    margin: -47px 0px;
+    font-size: 18px;
+    padding: 19px 2px;
+
+}
+
+.heading {
+    background-color: rgb(247, 201, 201);
+}
+
+.f {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin: 191px 0px;
+
+
+}
+
+.fea-animation {
+    opacity: 0;
+    transform: translateY(1000px);
+    /* Initial position below the viewport */
+    animation: fadeInUp 9s forwards;
+    /* Apply the animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(2900px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.f {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 191px 0px;
+}
+
+.f1 {
+    padding: 2px 2px;
+}
+
+.f1,
+.f2 {
+    flex-basis: calc(50% - 20px);
+    /* Adjust the width as needed */
+    margin: 10px;
+}
+
+.f2 img {
+    max-width: 73%;
+    height: auto;
+    border: 5px solid white;
+}
+
+.f1 img {
+    border: 5px solid white;
+
+}
+
+.f2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: -28px -187px;
+}
+
+
+.f2 img:first-child {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-106%) translateY(43%);
+    width: 73%;
+    z-index: 1;
+}
+
+
+
+
+
+section.team {
+    position: relative;
+    top: 3481px;
+    width: 99%;
+    /* border: 2px solid black; */
+    background-color: white;
+    padding: 37px 5px;
+    overflow-x: hidden;
+}
+
+.headingt h1 {
+    text-align: center;
+    margin: 22px 0px;
+    font-size: 60px;
+
+    font-family: "Sofia", sans-serif;
+    font-size: 60px;
+    text-shadow: 3px 3px 3px #ababab;
+}
+
+.headingt p {
+    text-align: center;
+    margin: -47px 0px;
+    font-size: 18px;
+    padding: 19px 2px;
+
+}
+
+.headingt {
+    background-color: rgb(247, 201, 201);
+
+
+}
+
+.team-animation {
+    opacity: 0;
+    transform: translateY(1000px);
+    /* Initial position below the viewport */
+    animation: fadeInUp 10s forwards;
+    /* Apply the animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(3800px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+.team-member-image {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    margin: 0 auto;
+    display: block;
+}
+
+
+.t {
+    display: flex;
+    width: 100%;
+    margin: 47px 0px;
+}
+
+.t1 {
+    flex: 1;
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+
+.t1 h3 {
+    font-family: "Sofia", sans-serif;
+    text-align: center;
+}
+
+section.footer {
+    position: relative;
+    top: 3410px;
+    width: 99%;
+    /* border: 2px solid black; */
+    background-color: rgb(228, 225, 225);
+    font-family:"Sofia", sans-serif ;
+    padding: 0px 160px;
+    overflow-x: hidden;
+}
+
+.foot {
+    display: flex;
+    width: 100%;
+    margin: 47px 0px;
+}
+
+.foot1 {
+    flex: 1;
+    padding: 20px;
+    /* border: 1px solid black; */
+}
+
+.footer-animation {
+    opacity: 0;
+    transform: translateY(1000px);
+    /* Initial position below the viewport */
+    animation: fadeInUp 11s forwards;
+    /* Apply the animation */
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(3800px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+.links h1{
+    padding:2px 2px 2px 107px ;
+}
+.links ul li {
+    list-style: none;
+}
+.links ul li a{
+    text-decoration: none;
+    font-family:"Sofia", sans-serif ;
+    font-size: 25px;
+    padding: 2px 2px 2px 107px;
+}
+.links ul li a:hover {
+    color:red;
+}
+/* Add this to your existing CSS */
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin: 3px 5px;
+}
+
+
+
+#logo .copyright {
+    font-size: 46px;
+    color: #999;
+    margin-left: 10px;
+}
